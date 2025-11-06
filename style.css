@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* teal glow background */
+body::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 255, 200, 0.35);
+  filter: blur(200px);
+  z-index: 0;
+}
+
+.wrapper {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 350px; /* adjust size if needed */
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+.coming-soon {
+  color: #777;
+  font-size: 22px;
+}
